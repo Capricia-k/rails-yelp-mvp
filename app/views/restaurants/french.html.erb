@@ -1,0 +1,11 @@
+<h1>French Restaurants</h1>
+
+<% @restaurants.each do |restaurant| %>
+  <div>
+    <h2><%= restaurant.name %></h2>
+    <p>Address : <%= restaurant.address %></p>
+    <p>Phone number : <%= restaurant.phone_number %></p>
+    <p>Catégorie : <%= restaurant.category %></p>
+    <p>Note : <%= restaurant.rating %></p>
+  </div>
+<% end %>
