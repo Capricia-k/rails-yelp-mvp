@@ -4,7 +4,7 @@
   <%= simple_form_for [@restaurant, @review] do |f| %>
     <%= f.input :content, as: :text, label: "Your review" %>
 
-    <%= f.input :note, 
+    <%= f.input :rating, 
                 as: :integer, 
                 label: "Rating (0 à 5)", 
                 input_html: { min: 0, max: 5, step: 1 } %>
